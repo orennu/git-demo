@@ -1,0 +1,6 @@
+## patterns
+# specific file: myFile.ext
+# file pattern: *.ext
+# folder: myFolder/
+
+target/
