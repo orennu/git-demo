@@ -15,9 +15,13 @@
 * git mv \<oldFileName\> \<newFileName\> --> rename a file
 * git mv \<oldDirName/fileName\> \<newDirName/\> --> move a file to another directory
 
-### Log commands
+### Log/history commands
 * git log --> show commit log history
+* git log --abbrev-commit --> same as above with shortened commit sha1
 * git log --oneline --> same as above with one line per commit
+* git log --oneline --graph --decorate --> will create ASCII graph for history
+* git log --since="time statement" --> limit the history for time since "time statement" (e.g. git log --since="3 days ago")
+* git log -- \<fileName\> --> limit history to specific file
 
 ### Diff commands
 * git diff --> diff between working directory and staging area
