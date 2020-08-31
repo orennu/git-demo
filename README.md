@@ -19,7 +19,7 @@
 * git log --> show commit log history
 * git log --abbrev-commit --> same as above with shortened commit sha1
 * git log --oneline --> same as above with one line per commit
-* git log --oneline --graph --decorate --> will create ASCII graph for history
+* git log --oneline --graph --decorate -all --> will create ASCII graph for history (mostly visual when branching and merging)
 * git log --since="time statement" --> limit the history for time since "time statement" (e.g. git log --since="3 days ago")
 * git log -- \<fileName\> --> limit history to specific file
 
@@ -40,4 +40,8 @@
 * git branch -d \<branchName\> --> delete local branch
 * git checkout \<myNewBranch\> --> switch to local branch myNewBranch
 * git checkout -b \<newBranchName\> --> create new branch and switch to it in single command
-adding a line to simulate conflict
+
+### Merge commands
+* git merge /<branchName/> --> merge branchName to master (fast-forward)
+* git merge --no-ff /<branchName/> --> merge branchName to master (no fast-forward)
+* git mergetool --> open configured mergetool to resolve merge conflicts
