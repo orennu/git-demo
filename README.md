@@ -39,3 +39,4 @@
 * git branch -m \<oldBranchName\> \<newBranchName\> --> rename branch
 * git branch -d \<branchName\> --> delete local branch
 * git checkout \<myNewBranch\> --> switch to local branch myNewBranch
+* git checkout -b \<newBranchName\> --> create new branch and switch to it in single command
