@@ -4,3 +4,4 @@
 # folder: myFolder/
 
 target/
+*.orig
