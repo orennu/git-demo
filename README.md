@@ -56,3 +56,6 @@
 * git merge /<branchName/> --> merge branchName to master (fast-forward)
 * git merge --no-ff /<branchName/> --> merge branchName to master (no fast-forward)
 * git mergetool --> open configured mergetool to resolve merge conflicts
+
+### Reverting changes
+* git reset --hard \<commit sha1\> --> revert all changes in local repository, staging area and working directory to specific commit
