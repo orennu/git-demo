@@ -19,9 +19,12 @@
 * git log --> show commit log history
 * git log --abbrev-commit --> same as above with shortened commit sha1
 * git log --oneline --> same as above with one line per commit
-* git log --oneline --graph --decorate -all --> will create ASCII graph for history (mostly visual when branching and merging)
+* git log --oneline --graph --decorate --all --> will create ASCII graph for history (mostly visual when branching and merging)
 * git log --since="time statement" --> limit the history for time since "time statement" (e.g. git log --since="3 days ago")
 * git log -- \<fileName\> --> limit history to specific file
+
+### Aliasing
+* git config --global alias.\<myAlias\> '\<git command without 'git' leading command\> (e.g. git config --global alias.hist 'log --oneline --graph --decorate --all')
 
 ### Diff commands
 * git diff --> diff between working directory and staging area
