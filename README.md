@@ -43,6 +43,7 @@
 * git [diff|difftool] \<commit 1 sha1\> \<commit 2 sha1\> --> diff between 2 arbitrary commits (e.g. git difftool 6a21df8 ac67ca4)
 * git [diff|difftool] HEAD HEAD^ --> diff between local repository and 1 commit before
 * git [diff|difftool] \<branchName\> \<origin/branchName\> --> diff between local branch and remote branch (or any arbitrary 2 branches)
+* git [diff|difftool] \<tagName1\> \<tagName2\> --> tag based diff 
 
 ### Branch commands
 * git branch -a --> list local and remote branches
