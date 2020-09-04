@@ -29,6 +29,10 @@
 ### Tagging
 * git tag \<myTag\> --> add a lightweight tag to current commit
 * git tag --list --> list all tags
+* git show \<myTag\> --> using tag as reference in other git command, in this case will show changes done on commit with specific tag
+* git tag --delete \<myTag\> --> delete a tag
+* git tag -a \<myTag\> --> add an annotated tag to current commit
+* git tag -a \<myTag\> -m "\<tag description\>" --> same as above with inline description message
 
 ### Diff commands
 * git diff --> diff between working directory and staging area
