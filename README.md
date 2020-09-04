@@ -24,7 +24,11 @@
 * git log -- \<fileName\> --> limit history to specific file
 
 ### Aliasing
-* git config --global alias.\<myAlias\> '\<git command without 'git' leading command\> (e.g. git config --global alias.hist 'log --oneline --graph --decorate --all')
+* git config --global alias.\<myAlias\> '\<git command without 'git' leading command\> --> create an alias, note that git keyword should be omitted (e.g. git config --global alias.hist 'log --oneline --graph --decorate --all')
+
+### Tagging
+* git tag \<myTag\> --> add a lightweight tag to current commit
+* git tag --list --> list all tags
 
 ### Diff commands
 * git diff --> diff between working directory and staging area
