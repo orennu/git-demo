@@ -1,7 +1,7 @@
 # git-demo
 ## Demo repository for learning git
 ### Basic commands
-* git clone <url (either ssh or https)> --> clone repository from remote server
+* git clone \<url (either ssh or https)\> --> clone repository from remote server
 * git init --> initialize a new repository in current working directory
 * git pull origin \<branchName\> --> pull branch from remote repository
 * git add \<fileName\> --> add file from working directory to staging area
@@ -29,10 +29,15 @@
 ### Tagging
 * git tag \<myTag\> --> add a lightweight tag to current commit
 * git tag --list --> list all tags
-* git show \<myTag\> --> using tag as reference in other git command, in this case will show changes done on commit with specific tag
 * git tag --delete \<myTag\> --> delete a tag
 * git tag -a \<myTag\> --> add an annotated tag to current commit
 * git tag -a \<myTag\> -m "\<tag description\>" --> same as above with inline description message
+
+### Show commands
+* git show --> show last commit in current branch
+* git show \<commit hash> --> show specific commit
+* git show \<myTag\> --> using tag as reference in other git command, in this case will show changes done on commit with
+specific tag
 
 ### Diff commands
 * git diff --> diff between working directory and staging area
@@ -40,7 +45,7 @@
 * git [diff|difftool] HEAD --> diff between working directory and local repository (last commit)
 * git [diff|difftool] --staged HEAD --> diff between staging area and local repository (last commit)
 * git [diff|difftool] -- \<fileName\> --> diff a single file
-* git [diff|difftool] \<commit 1 sha1\> \<commit 2 sha1\> --> diff between 2 arbitrary commits (e.g. git difftool 6a21df8 ac67ca4)
+* git [diff|difftool] \<commit 1 hash\> \<commit 2 hash\> --> diff between 2 arbitrary commits (e.g. git difftool 6a21df8 ac67ca4)
 * git [diff|difftool] HEAD HEAD^ --> diff between local repository and 1 commit before
 * git [diff|difftool] \<branchName\> \<origin/branchName\> --> diff between local branch and remote branch (or any arbitrary 2 branches)
 * git [diff|difftool] \<tagName1\> \<tagName2\> --> tag based diff 
@@ -59,4 +64,4 @@
 * git mergetool --> open configured mergetool to resolve merge conflicts
 
 ### Reverting changes
-* git reset --hard \<commit sha1\> --> revert all changes in local repository, staging area and working directory to specific commit
+* git reset --hard \<commit hash\> --> revert all changes in local repository, staging area and working directory to specific commit
