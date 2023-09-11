@@ -45,8 +45,7 @@ specific tag
 * git [diff|difftool] HEAD --> diff between working directory and local repository (last commit)
 * git [diff|difftool] --staged HEAD --> diff between staging area and local repository (last commit)
 * git [diff|difftool] -- \<fileName\> --> diff a single file
-* git [diff|difftool] \<commit 1 hash\> \<commit 2 hash\> --> diff between 2 arbitrary commits (e.g. git difftool 6a21df8 ac67ca4)
-* git [diff|difftool] HEAD HEAD^ --> diff between local repository and 1 commit before
+* git [diff|difftool] \<commit 1 hash git [diff|difftool] HEAD HEAD^ --> diff between local repository and 1 commit before
 * git [diff|difftool] \<branchName\> \<origin/branchName\> --> diff between local branch and remote branch (or any arbitrary 2 branches)
 * git [diff|difftool] \<tagName1\> \<tagName2\> --> tag based diff 
 
